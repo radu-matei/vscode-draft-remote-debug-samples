@@ -7,7 +7,16 @@
         {
             "type": "draft",
             "request": "launch",
-            "name": "draft"
+            "name": "draft",
+            "original-debug": {
+                "type": "node",
+                "request": "attach",
+                "name": "Attach to remote",
+                "address": "localhost",
+                "port": 9229,
+                "localRoot": "${workspaceFolder}",
+                "remoteRoot": "/usr/src/app/"
+            }
         }
     ]
 }
