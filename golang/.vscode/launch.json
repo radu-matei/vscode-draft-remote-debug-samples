@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Draft Debug",
             "original-debug": {
-                "name": "Connect to server",
+                "name": "Kubernetes remote debugging",
                 "type": "go",
                 "request": "launch",
                 "mode": "remote",

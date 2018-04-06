@@ -1,10 +1,6 @@
-FROM golang:1.9 as builder
+FROM radumatei/golang:dlv
 
-WORKDIR /go/src/app
 COPY . .
-
-#RUN go get -u github.com/golang/dep/cmd/dep
-RUN go get github.com/derekparker/delve/cmd/dlv
 
 #RUN dep init
 #RUN dep ensure
