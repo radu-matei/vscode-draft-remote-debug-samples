@@ -10,15 +10,16 @@ const requestHandler = (request, response) => {
 };
 
   var body = `I am ${os.hostname()} Develoepr inner loop`
-  http.get(options, (r) => {
-    r.on('data', (data)=> {
-      body += data;
-    });
-    r.on('end', () =>   {
-      response.end(body)
-    });
-  });
+  // http.get(options, (r) => {
+  //   r.on('data', (data)=> {
+  //     body += data;
+  //   });
+  //   r.on('end', () =>   {
+  //     response.end(body)
+  //   });
+  // });
 
+  response.end(body);
 }
 
 const server = http.createServer(requestHandler);
